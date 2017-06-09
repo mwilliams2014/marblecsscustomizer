@@ -38,12 +38,9 @@ $link-color: $primary !default;
 $link-hover-color: $primary !default;
 $link-hover-decoration: none !default;
 // Typography
-$font-primary: "Galano",
-sans-serif !default;
-$font-secondary: "Open Sans",
-sans-serif !default;
-$font-mono: "Roboto Mono",
-sans-serif !default;
+$font-primary: "Galano", sans-serif !default;
+$font-secondary: "Open Sans", sans-serif !default;
+$font-mono: "Roboto Mono", sans-serif !default;
 $font-size-base: 14px !default;
 $font-size-h1: 20px !default;
 $font-size-h2: 18px !default;
@@ -99,4 +96,3 @@ $shadow-small: 0 1px 1px rgba($black, 0.08) !default;
 $shadow-large: 0 2px 4px rgba($black, 0.12) !default;
 $transition-duration: .3s !default;
 $transition-function: ease-in-out !default;
-@import "bootstrap-sass/assets/stylesheets/bootstrap/variables";
