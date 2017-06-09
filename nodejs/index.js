@@ -1,14 +1,17 @@
-var express = require('express');
-var morgan = require('morgan');
-var path = require('path');
-var app = express();
+const fs = require('fs');
 
-app.use(morgan('combined'));
+let accent = fs.readFile(
+	'main.scss',
+	'utf-8',
+	(err, res) => {
+		console.log(res);
+	}
+);
 
-app.get('/', function (req, res) {
-	res.sendFile(path.join(__dirname + '/public/index.html'));
-});
-
-app.listen(80, function () {
-  console.log('Listening on port 80');
-});
+let variables = fs.readFile(
+	'_variables.scss',
+	'utf-8',
+	(err, res) => {
+		console.log(res);
+	}
+);
