@@ -12,19 +12,15 @@ $(function() {
 					var res = REGEX.exec(line);
 
 					if (!!res) {
-						console.log(res);
-
-						console.log(res[1] + ' ' + res[2]);
-
 						instance.sassArray.push({
-							'variable': 'hi',
-							'value': 'bye'
+							'variable': res[1],
+							'value': res[2]
 						});
 					}
 				}
 			)
 
-			console.log(instance.sassArray);
+			// console.log(instance.sassArray);
 		},
 
 		readFile: function() {
