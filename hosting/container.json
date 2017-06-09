@@ -1,0 +1,5 @@
+{
+	"description": "MarbleCSS Customizer",
+	"id": "hosting",
+	"type": "wedeploy/hosting:latest"
+}
