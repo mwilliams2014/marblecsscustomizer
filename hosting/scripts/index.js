@@ -1,6 +1,6 @@
 $(function() {
 
-	$.when($.get('main.scss')).done(
+	$.when($.get('assets/main.scss')).done(
 		function(res) {
 			console.log(res);
 		}
