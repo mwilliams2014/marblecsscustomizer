@@ -26,13 +26,31 @@ $(function() {
 		readFile: function() {
 			var instance = this;
 
-			$.when($.get('assets/_variables.scss')).done(
+			$.when($.get('assets/variables.scss')).done(
 				function(data) {
 					data = data.split('\n');
-					console.log(data);
+
 					instance.formatData(data);
 				}
 			);
+		},
+
+		renderColorInput: function(data) {
+			var instance = this;
+
+			var fragment = document.createDocumentFragment();
+
+			fragment.innerHTML = `<label for="${data.variable}">${data.variable}</label>
+				<input type="color" class id=${data.variable} value="${data.value}">`
+		},
+
+		renderTextInput: function(data) {
+			var instance = this;
+
+			var fragment = document.createDocumentFragment();
+
+			fragment.innerHTML = `<label for="${data.variable}">${data.variable}</label>
+				<input type="text" class id=${data.variable} value="${data.value}">`
 		}
 	}
 
