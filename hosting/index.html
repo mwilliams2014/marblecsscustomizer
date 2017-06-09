@@ -5,8 +5,29 @@
     <title>Marble CSS Visualizer</title>
   </head>
   <body>
+    <textarea class="boilerplate-imports" style="display:none;">
+  @import "marble";
+
+  // Root
+  @import "templates/root";
+
+  // Landing
+  @import "templates/landing";
+
+  // Docs
+  @import "templates/docs";
+
+  // Search
+  @import "templates/search";
+
+  // Customization
+  @import "custom/all";
+  @import "custom/docs";
+  @import "custom/landing";
+  @import "custom/showcase";
+    </textarea>
     <form class="marble-form">
-      <button class="btnSubmit" onclick="generateSass(); return false();">Submit</button>
+      <p><a href="#" id="generateBtn">Generate Sass</a></p>
     </form>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="scripts/index.js"></script>
